@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import WeekNavigator from '../components/WeekNavigator';
+
 import {
     View,
     Text,
@@ -37,7 +39,9 @@ const moodEmojis = {
     sad: '🙁',
 };
 
-export default function WeeklyOverview() {
+export default function Tracker() {
+
+    const [currentDate, setCurrentDate] = useState(new Date());
     const [days, setDays] = useState(initialDays);
     const [selected, setSelected] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
@@ -64,6 +68,7 @@ export default function WeeklyOverview() {
 
     return (
         <View style={styles.container}>
+            <WeekNavigator currentDate={currentDate} setCurrentDate={setCurrentDate} />
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 {days.map(day => (
                     <TouchableOpacity
