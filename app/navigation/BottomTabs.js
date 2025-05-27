@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import Tracker from '../screens/Tracker';
+import ThisMonth from '../screens/ThisMonth';
 import Progress from '../screens/Progress';
 import Goals from '../screens/Goals';
 import Options from '../screens/Options';
@@ -18,6 +19,7 @@ export default function BottomTabs() {
                     let icon;
                     switch (route.name) {
                         case 'Tracker': icon = 'calendar-check'; break;
+                        case 'ThisMonth': icon = 'calendar-month'; break;
                         case 'Progress': icon = 'chart-line'; break;
                         case 'Goals': icon = 'target'; break;
                         case 'Options': icon = 'cog'; break;
@@ -30,6 +32,7 @@ export default function BottomTabs() {
             })}
         >
             <Tab.Screen name="Tracker" component={Tracker} />
+            <Tab.Screen name="ThisMonth" component={ThisMonth} />
             <Tab.Screen name="Progress" component={Progress} />
             <Tab.Screen name="Goals" component={Goals} />
             <Tab.Screen name="Options" component={Options} />
