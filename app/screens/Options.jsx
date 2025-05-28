@@ -28,6 +28,13 @@ export default function Options() {
 
     return (
         <ScrollView contentContainerStyle={styles.container}>
+            {/* Section 2: Your details */}
+            <Text style={styles.sectionTitle}>My Details</Text>
+            <Text label="First Name" value="<NAME>">Tom</Text>
+            <Text label="Sex" value="Male">Male</Text>
+            <Text label="Age" value="43">43</Text>
+
+
             <Text style={styles.sectionTitle}>Your notifications</Text>
 
             <View style={styles.row}>
@@ -76,7 +83,7 @@ export default function Options() {
                 <Text style={styles.resetText}>Reset app</Text>
             </TouchableOpacity>
 
-            <Text style={styles.buildText}>build version: 3.2.1.371</Text>
+            <Text style={styles.buildText}>build version: 0.1</Text>
         </ScrollView>
     );
 }

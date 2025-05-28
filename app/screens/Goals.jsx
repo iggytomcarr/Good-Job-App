@@ -27,10 +27,7 @@ export default function Goals() {
             <Row label="Your typical week" />
             <Row label="Your drinking data" />
 
-            {/* Section 2: Your details */}
-            <SectionTitle title="Your details" />
-            <Row label="Sex" value="Male" />
-            <Row label="Age" value="43" />
+
 
             {/* Section 3: Your goals */}
             <SectionTitle title="Your goals" />

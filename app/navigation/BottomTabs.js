@@ -32,7 +32,7 @@ export default function BottomTabs() {
             })}
         >
             <Tab.Screen name="Tracker" component={Tracker} />
-            <Tab.Screen name="ThisMonth" component={ThisMonth} />
+            <Tab.Screen name="ThisMonth" component={ThisMonth} options={{ title: 'This Month' }}/>
             <Tab.Screen name="Progress" component={Progress} />
             <Tab.Screen name="Goals" component={Goals} />
             <Tab.Screen name="Options" component={Options} />
