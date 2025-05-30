@@ -1,26 +1,31 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Dimensions } from 'react-native';
 
-const dayColors = {
-    SUN: '#FFCDD2',
-    MON: '#FFE0B2',
-    TUE: '#FFF9C4',
-    WED: '#C8E6C9',
-    THU: '#B3E5FC',
-    FRI: '#B2DFDB',
-    SAT: '#E1BEE7',
+const ProgressColours = {
+    PROGRESS1: '#FFCDD2', // light red/pink
+    PROGRESS2: '#FFE0B2', // light orange
+    PROGRESS3: '#FFF9C4', // light yellow
+    PROGRESS4: '#C8E6C9', // light green
+    PROGRESS5: '#B3E5FC', // light blue
+    PROGRESS6: '#B2DFDB', // light teal
+    PROGRESS7: '#E1BEE7', // light purple
+    PROGRESS8: '#FFCCBC', // light peach
+    PROGRESS9: '#F8BBD9', // light rose
+    PROGRESS10: '#D1C4E9', // light lavender
+    PROGRESS11: '#DCEDC8', // light lime
+    PROGRESS12: '#BBDEFB', // light sky blue
 };
 
 // Assign each metric a color from dayColors
 const metrics = [
-    { title: 'Money Saved', value: '£629', color: dayColors.MON },
-    { title: 'Beat an Urge', value: '0', color: dayColors.TUE },
-    { title: 'Total Health', value: '78.24%', color: dayColors.WED },
-    { title: 'Drinks Passed', value: '251', color: dayColors.THUR },
-    { title: 'Weight Statistics', value: '0.0 kg', color: dayColors.FRI },
-    { title: 'Goals Achieved', value: '58 / 110', color: dayColors.SAT },
-    { title: 'Calories Avoided', value: 'N/A', color: dayColors.SUN },
-    { title: 'Time Sober', value: '4m 26d', color: '#FFF' },
+    { title: 'Money Saved', value: '£629', color: ProgressColours.PROGRESS1 },
+    { title: 'Beat an Urge', value: '0', color: ProgressColours.PROGRESS2 },
+    { title: 'Total Health', value: '78.24%', color: ProgressColours.PROGRESS3 },
+    { title: 'Drinks Passed', value: '251', color: ProgressColours.PROGRESS4 },
+    { title: 'Weight Statistics', value: '0.0 kg', color: ProgressColours.PROGRESS5 },
+    { title: 'Goals Achieved', value: '58 / 110', color: ProgressColours.PROGRESS6 },
+    { title: 'Calories Avoided', value: 'N/A', color: ProgressColours.PROGRESS7 },
+    { title: 'Time Sober', value: '4m 26d', color: ProgressColours.PROGRESS8 },
 ];
 
 const Progress = () => {
